@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+     #navbar {
+         width: 100%;
+         height: 80px;
+         background-color: grey;
+         display: grid;
+         grid-template-columns: 300px 300px 300px;
+         grid-template-rows: auto;
+         grid-gap: 20px;
+         
+     }
+     #navbar div{
+         margin-left: 100px;
+     }
+    </style>
+</head>
+
+<body>
+
+   <div id="navbar">
+        <div id="login" onclick="login()"><h1>LOGIN</h1></div>
+        <div id="signup" onclick="signup()"><h1>SIGN UP</h1></div>
+        <div id="ticket" onclick="ticket()"><h1>TICKETS</h1></div>
+
+   </div>
+
+    
+</body>
+
+</html>
+<script>
+     function login(){
+         window.location.href = "login.html";
+     }      
+
+     function signup() {
+          window.location.href = "signup.html";
+     }
+    function ticket() {
+            window.location.href = "ticket.html";
+        }
+
+
+</script>
